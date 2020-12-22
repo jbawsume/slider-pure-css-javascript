@@ -1,4 +1,4 @@
-# Dashboard navigation side menu
+# Carousel slider
 
 Carousel slider made with pure CSS and Javascript.
 
