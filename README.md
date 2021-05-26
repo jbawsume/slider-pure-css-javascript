@@ -1,6 +1,8 @@
 # Carousel slider
 
-Carousel slider made with pure CSS and Javascript.
+Auto Slide Carousel slider made with pure CSS and Javascript.
+
+Fork of Romaopedro's implementation . added auto slide with pure javascript
 
 Preview:
 
