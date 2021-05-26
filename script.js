@@ -2,6 +2,7 @@ const indicators = document.querySelectorAll('.slider .indicators .indicator')
 const arrowPrev = document.querySelector('.slider .arrows .arrow-prev')
 const arrowNext = document.querySelector('.slider .arrows .arrow-next')
 
+
 const handleIndicatorClick = (event) => {
   const indicator = event.target
   if (!isActive(indicator)) {
@@ -55,6 +56,20 @@ indicators.forEach(indicator => {
 
 arrowPrev.addEventListener('click', handlePrevArrowClick)
 arrowNext.addEventListener('click', handleNextArrowClick)
+
+// auto play function 
+function start() {
+        setInterval(function() {
+            //calling go to next slide
+          handleNextArrowClick();
+          // Again
+
+          // Every 5 sec
+        }, 5000);
+}
+
+// Begins
+start();
 
 function isActive (indicator) {
   return indicator.hasAttribute('active')
